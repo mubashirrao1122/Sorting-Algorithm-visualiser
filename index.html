@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-bar">
+    <h1>Sorting Visualizer</h1>
+    <small>Visualize different sorting algorithms</small>
+  </header>
+  <header>
+    <nav>
+      <div class="nav-item">
+        <button id="bubbleSort" title="Bubble Sort: Repeatedly swaps adjacent elements if they are in the wrong order.">Bubble Sort</button>
+        <span class="complexity">O(n²)</span>
+      </div>
+      <div class="nav-item">
+        <button id="insertionSort" title="Insertion Sort: Builds the sorted array one item at a time.">Insertion Sort</button>
+        <span class="complexity">O(n²)</span>
+      </div>
+      <div class="nav-item">
+        <button id="selectionSort" title="Selection Sort: Selects the smallest element from an unsorted list in each iteration.">Selection Sort</button>
+        <span class="complexity">O(n²)</span>
+      </div>
+      <div class="nav-item">
+        <button id="heapSort" title="Heap Sort: Converts the array into a heap and then sorts it.">Heap Sort</button>
+        <span class="complexity">O(n log n)</span>
+      </div>
+      <div class="nav-item">
+        <button id="countingSort" title="Counting Sort: Counts the number of objects having distinct key values.">Counting Sort</button>
+        <span class="complexity">O(n + k)</span>
+      </div>
+      <div class="nav-item">
+        <button id="mergeSort" title="Merge Sort: Divides the array into halves and merges them in a sorted manner.">Merge Sort</button>
+        <span class="complexity">O(n log n)</span>
+      </div>
+      <div class="nav-item">
+        <button id="quickSort" title="Quick Sort: Divides the array into smaller arrays based on a pivot.">Quick Sort</button>
+        <span class="complexity">O(n log n)</span>
+      </div>
+      <div class="nav-item">
+        <button id="radixSort" title="Radix Sort: Sorts numbers by processing individual digits.">Radix Sort</button>
+        <span class="complexity">O(nk)</span>
+      </div>
+      <div class="nav-item">
+        <button id="bucketSort" title="Bucket Sort: Distributes elements into buckets and sorts them.">Bucket Sort</button>
+        <span class="complexity">O(n + k)</span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="controls">
+      <input type="text" id="arrayInput" placeholder="Enter array (comma-separated)">
+      <button id="submitArray">Submit</button>
+      <button id="generateArray">Generate Random Array</button>
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div id="arrayContainer"></div>
+    <div class="stats">
+      <p>Total Comparisons: <span id="totalComparisons">0</span></p>
+      <p>Total Swaps: <span id="totalSwaps">0</span></p>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
