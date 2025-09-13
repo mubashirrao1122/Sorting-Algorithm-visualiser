@@ -19,7 +19,7 @@ A web-based application to visualize various sorting algorithms. This interactiv
 ## How to Use
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/sorting-visualizer.git
+   git clone https://github.com/mubashirrao1122/sorting-visualizer.git
    ```
 2. Navigate to the project directory:
    ```sh
